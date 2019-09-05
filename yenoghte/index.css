@@ -1,0 +1,14 @@
+body{
+
+  background-color: skyblue ;
+  font-color : #333 ;
+}
+table{
+  table-layout: fixed ;
+}
+td{
+  border : 5px solid black;
+  width : 50px ;
+  height : 45px ;
+  margin : auto ;
+}
