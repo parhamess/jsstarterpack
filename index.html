@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title> kossheri bish nist </title>
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  </head>
+  <body>
+
+    <script type="text/javascript" >
+      var x = new Array();
+      function del(i){
+        x.splice(i,1);
+        render();
+      }
+      function render(){
+        document.getElementById("ddd").innerHTML="<ul>" ;
+          for(let i =0;i<x.length;++i){
+
+            document.getElementById("ddd").innerHTML+="<li>" +x[i]+ "<button type=\"button\" onclick=\"del("+  i+")\"> </li>" ;
+          }
+          document.getElementById("ddd").innerHTML+="</ul>" ;
+      }
+      function act(){
+        x.push(document.getElementById("xxx").value)
+        render();
+      }
+    </script>
+    <input placeholder="HERE" id="xxx" type="text">
+    <button type="button" onclick="act()">
+      Click Here !!
+    </button>
+    <div id="ddd">
+    </div>
+
+  </body>
+</html>
